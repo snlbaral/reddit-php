@@ -1,0 +1,30 @@
+{
+    "name": "snlbaral/reddit-php",
+    "description": "Reddit API for PHP.",
+    "homepage": "https://github.com/snlbaral/reddit-php",
+    "license": "BSD-3-Clause",
+    "prefer-stable": true,
+    "keywords": [
+        "snlbaral",
+        "reddit",
+        "php",
+        "api"
+    ],
+    "authors": [
+        {
+            "name": "Sunil Baral"
+        }
+    ],
+    "support": {
+        "email": "support@jcloudia.com"
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
+ 
+    "autoload": {
+        "psr-4": {
+            "Snlbaral\\Reddit\\": "src/"
+        }
+    }
+}
