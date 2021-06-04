@@ -19,7 +19,8 @@
         "email": "support@jcloudia.com"
     },
     "require": {
-        "guzzlehttp/guzzle": "^7.2"
+        "guzzlehttp/guzzle": "^7.2",
+        "ext-zip": "*"
     },
  
     "autoload": {
