@@ -110,6 +110,13 @@ $next_page_downloads = $reddit->downloadMediasBySub('subreddit_name', $downloads
 // returns array of next page token, dist, sorting method and subreddit name
 ```
 
+**More Available Methods**
+```php
+parseMediaByPosts($posts); //$posts array of posts from getPosts()
+downloadMediasByPosts($posts); //$posts array of posts from getPosts()
+parseMedia($media); //each $posts has media loop $posts and pass $post['media'];
+```
+
 
 **Example.php**
 
