@@ -97,17 +97,6 @@ $next_page_comments = $reddit->userComments('username', $comments['token']);
 ```
 
 
-**Fetch User Overview Page**
-```php
-// userOverview() @params $username, $token (optional), $dist (optional), $sort (optional)
-$overview = $reddit->userOverview('username');
-// returns array of user's posts, comments, next page token, dist, sorting method, username
-
-// To Get next page/thread posts and comments of user, use following
-$next_page_overview = $reddit->userOverview('username', $overview['token']);
-```
-
-
 **Download Media Files From A Subreddit**
 ```php
 // downloadMediasBySub() @params $subreddit_name, $token (optional), $dist (optional), $sort (optional), $dir (optional)
@@ -117,7 +106,7 @@ $downloads = $reddit->downloadMediasBySub('subreddit_name');
 
 // To download next page/thread media files, use following
 $next_page_downloads = $reddit->downloadMediasBySub('subreddit_name', $downloads['token']);
-// Downloads All Media Files from first page of subreddit using async, saves in $dir location
+// Downloads All Media Files from next page of subreddit using async, saves in $dir location
 // returns array of next page token, dist, sorting method and subreddit name
 ```
 
@@ -133,7 +122,7 @@ try {
 
 	if($e->getResponse()) {
 		$response = $e->getResponse();
-	    $responseBodyAsString = $response->getBody()->getContents();
+		$responseBodyAsString = $response->getBody()->getContents();
 		var_dump($responseBodyAsString);
 	} else {
 		var_dump($e);
