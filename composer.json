@@ -6,7 +6,8 @@
     "prefer-stable": true,
     "keywords": [
         "snlbaral",
-        "reddit",
+        "reddit api",
+        "non oauth",
         "php",
         "api"
     ],
@@ -16,11 +17,10 @@
         }
     ],
     "support": {
-        "email": "support@jcloudia.com"
+        "email": "snlbaral@gmail.com"
     },
     "require": {
-        "guzzlehttp/guzzle": "^7.2",
-        "ext-zip": "*"
+        "guzzlehttp/guzzle": "^7.2"
     },
  
     "autoload": {
